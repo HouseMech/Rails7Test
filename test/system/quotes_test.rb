@@ -45,7 +45,6 @@ class QuotesTest < ApplicationSystemTestCase
 
   test "Destroying a quote" do
     visit quotes_path
-    puts @quote.id
     assert_text @quote.name
 
     click_on "Delete", match: :first
